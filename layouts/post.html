@@ -1,0 +1,9 @@
+<% render 'default' do %>
+	<div class='post'>
+		<h1><%= item[:title] %></h1>
+		<aside>Posted at: <%= get_pretty_date(item) %></aside>
+		<article>
+			<%= yield %>
+		</article>
+	</div>
+<% end %>
